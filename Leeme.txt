@@ -1,0 +1,4 @@
+>mklink /d "D:\wwwLaragon\erpQuickBill\public\storage" "D:\wwwLaragon\erpQuickBill\storage"
+
+
+>mklink /d "D:\wwwLaragon\erpQuickBill\public\Modules" "D:\wwwLaragon\erpQuickBill\Modules"

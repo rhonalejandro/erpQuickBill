@@ -1,0 +1,25 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class PosPayment extends Model
+{
+
+    protected $connection = 'tenant';
+    protected $fillable = [
+        'pos_id',
+        'date',
+        'amount',
+        'discount',
+        'created_by',
+
+    ];
+
+
+    public function bankAccount()
+    {
+        return $this->hasOne('App\Models\BankAccount', 'id', 'account_id');
+    }
+}
